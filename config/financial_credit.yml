@@ -1,0 +1,28 @@
+data_name: 'credit'
+data_dir: './data/'
+train_ratio: 0.6
+test_ratio: 0.5
+save_dir: './models/'
+
+# 模型配置
+model: 'FinancialGNN'
+multi_relation: 'GNN'
+
+# 模型架构
+emb_size: 32  # 减小嵌入维度
+threshold: 0.5
+thresholds: [0.8, 0.6, 0.7]
+
+# 超参数
+rho: 0.5
+alpha: 2.0
+lr: 0.01
+weight_decay: 0.001
+batch_size: 256  # 减小batch_size，避免内存溢出
+num_epochs: 50   # 减少训练轮数，避免内存溢出
+valid_epochs: 5
+
+# 设备配置
+no_cuda: False
+cuda_id: '0'
+seed: 42
