@@ -9,6 +9,10 @@
 - **不平衡学习**: 专门针对金融异常检测中的类别不平衡问题
 - **可扩展架构**: 支持多种数据集和配置
 
+## 数据集
+
+下载链接：https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
 ## 安装依赖
 
 ```bash
